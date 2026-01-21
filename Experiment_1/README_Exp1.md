@@ -44,9 +44,11 @@ CREATE TABLE BOOKS(
 ```
 
 **Output:**
+
+
 ![Books Table Creation](Exp1_Images/1.png)
 
-### 2. DML Operations: Insert and Select
+### 2. Insert and Select: BOOKS
 **Input:**
 ```sql
 INSERT INTO BOOKS VALUES(101, 'Harry Potter', 'JK Rowling', 3);
@@ -54,6 +56,8 @@ SELECT * FROM BOOKS;
 ```
 
 **Output:**
+
+
 ![Insert and Select Books](Exp1_Images/2.png)
 ![Insert and Select Books](Exp1_Images/3.png)
 
@@ -69,6 +73,8 @@ CREATE TABLE LIBRARY_VISITORS(
 ```
 
 **Output:**
+
+
 ![Visitors Table](Exp1_Images/4.png)
 
 ### 4. Insert and Select: LIBRARY_VISITORS
@@ -80,10 +86,12 @@ SELECT * FROM LIBRARY_VISITORS
 ```
 
 **Output:**
+
+
 ![Visitors Table](Exp1_Images/5.png)
 ![Visitors Table](Exp1_Images/6.png)
 
-### 4. Table Creation: BOOK_ISSUE (Foreign Keys)
+### 4. Table Creation: BOOK_ISSUE
 **Input:**
 ```sql
 CREATE TABLE BOOK_ISSUE(
@@ -96,6 +104,8 @@ CREATE TABLE BOOK_ISSUE(
 ```
 
 **Output:**
+
+
 ![Book Issue Table](Exp1_Images/7.png)
 
 ### 4. Insert and Select: BOOK_ISSUE
@@ -106,11 +116,13 @@ SELECT * FROM BOOK_ISSUE
 ```
 
 **Output:**
+
+
 ![Book Issue Table](Exp1_Images/8.png)
 ![Book Issue Table](Exp1_Images/9.png)
 
 
-### 5. DCL Commands: Roles and Privileges
+### 5. Creating Roles
 **Input:**
 ```sql
 CREATE ROLE LIBRARIAN WITH LOGIN PASSWORD 'mehak1234';
@@ -119,6 +131,8 @@ REVOKE SELECT, INSERT, DELETE, UPDATE ON BOOKS, BOOK_ISSUE, LIBRARY_VISITORS FRO
 ```
 
 **Output:**
+
+
 ![DCL Operations](Exp1_Images/10.png)
 ![DCL Operations](Exp1_Images/11.png)
 
