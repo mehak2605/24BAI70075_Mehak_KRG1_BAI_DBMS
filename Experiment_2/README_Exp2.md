@@ -120,7 +120,7 @@ HAVING AVG(SALARY)>30000
 
 ![Books Table Creation](Exp2_Images/5.png)
 
-### 6. Arranging the departments in increasing order of their average salaries
+### 6. Arranging the departments in decreasing order of their average salaries
 **Input:**
 ```sql
 SELECT DEPARTMENT, AVG(SALARY)::NUMERIC(10,2) AS AVG_SAL FROM EMPLOYEE
