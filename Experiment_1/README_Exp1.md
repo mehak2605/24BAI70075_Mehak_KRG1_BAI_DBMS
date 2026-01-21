@@ -4,29 +4,30 @@
 To design and implement a Library Management System database using appropriate tables, primary keys, foreign keys, and constraints, and to perform DML operations along with DCL commands such as role creation, privilege granting, and revoking to ensure database security.
 
 ## Objectives
-* To gain practical experience in implementing Data Definition Language (DDL), Data Manipulation Language (DML), and Data Control Language (DCL) operations in a real database environment.
-* To implement role-based privileges to secure data.
+To gain practical experience in implementing Data Definition Language (DDL), Data Manipulation Language (DML), and Data Control Language (DCL) operations in a real database environment. This will also include implementing role-based privileges to secure data.
 
 ---
 
 ## Practical/Experiment Steps
-* Created table `BOOKS` to store book details including BOOK_ID, BOOK_NAME, and AUTHOR_NAME.
-* Created `LIBRARY_VISITORS` table to manage member information including NAME, AGE, and EMAIL.
-* Designed `BOOK_ISSUE` table to link books and visitors for the borrowing process.
-* Established Primary Keys for each table to uniquely identify records.
-* Applied Constraints to validate that age is greater than 17 and to prevent duplicate emails.
-* Utilized `INSERT`, `UPDATE`, and `DELETE` statements for record management.
-* Created a new role of Librarian to manage the tables.
-* Managed security using `GRANT` and `REVOKE` commands.
+* Created table BOOKS to store book details including BOOK_ID, BOOK_NAME, and AUTHOR_NAME.
+* Created another table LIBRARY_VISITORS to manage member information with fields for USER_ID, NAME, AGE, and EMAIL.
+* Another table BOOK_ISSUE designed to link books and visitors, representing the borrowing process.
+* Primary keys are established for each table to uniquely identify various records.
+* Constraints are also applied to validate the age is greater than 17, and to prevent duplicates in the email attribute.
+* Using INSERT statement to add new records in tables, UPDATE statement to correct the records or attributes and DELETE statement for deleting records.
+* A new role of Librarian is created to manage the tables. Various privileges can be given using GRANT and the same can be removed using REVOKE.
+
 
 ---
 
 ## Procedure
 1. Start the computer system.
-2. Open the software (PostgreSQL/pgAdmin) and login.
-3. Create or select the database.
-4. Write and execute appropriate SQL commands.
-5. Verify output and record results with screenshots.
+2. Open the software (i.e. PostgreSQL, MySQL etc.) and login.
+3. Create or select the database you wish to work in.
+4. Write appropriate SQL commands to execute the required tasks.
+5. Execute the commands.
+6. Verify the output.
+7. Note down the results and take screenshots for record.
 
 ---
 
@@ -139,7 +140,8 @@ REVOKE SELECT, INSERT, DELETE, UPDATE ON BOOKS, BOOK_ISSUE, LIBRARY_VISITORS FRO
 ---
 
 ## Learning Outcomes
-* Gained hands-on experience with PostgreSQL and pgAdmin.
-* Mastered writing queries to create, alter, and delete tables.
-* Learned to manage database security by creating roles and granting/revoking access.
-* Successfully implemented Primary Keys, Foreign Keys, and Check Constraints.
+* Gained hands-on experience to work with PostgreSQL and pgAdmin
+* Writing queries to create and delete tables
+* Learnt to alter tables, view tables, create roles, granting and revoking access to the roles
+* Primary and foreign keys implementations and roles
+
