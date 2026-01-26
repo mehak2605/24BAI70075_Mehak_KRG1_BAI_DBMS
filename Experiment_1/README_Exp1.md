@@ -9,25 +9,24 @@ To gain practical experience in implementing Data Definition Language (DDL), Dat
 ---
 
 ## Practical/Experiment Steps
-* Created table BOOKS to store book details including BOOK_ID, BOOK_NAME, and AUTHOR_NAME.
-* Created another table LIBRARY_VISITORS to manage member information with fields for USER_ID, NAME, AGE, and EMAIL.
-* Another table BOOK_ISSUE designed to link books and visitors, representing the borrowing process.
-* Primary keys are established for each table to uniquely identify various records.
-* Constraints are also applied to validate the age is greater than 17, and to prevent duplicates in the email attribute.
-* Using INSERT statement to add new records in tables, UPDATE statement to correct the records or attributes and DELETE statement for deleting records.
-* A new role of Librarian is created to manage the tables. Various privileges can be given using GRANT and the same can be removed using REVOKE.
-
+* Schema Architecture: Designed the fundamental structure by creating books and library_visitors tables. Robust data integrity was enforced using constraints such as NOT NULL, UNIQUE, and CHECK (notably restricting visitor registration to ages 18 and above).
+* Relational Mapping: Established the book_issue table to serve as a transactional link, utilizing Foreign Keys to connect book records with visitor data.
+* Data Seeding: Populated the database with a foundational dataset to validate the schema design and relationship logic.
+* Operational Validation: Conducted stress tests on the data by performing updates and deletions to observe how the system handles referential integrity and constraints.
+* Access Control Management: Implemented a security layer by creating a specific Librarian role. Access levels were meticulously defined and managed using GRANT and REVOKE commands.
 
 ---
 
 ## Procedure
-1. Start the computer system.
-2. Open the software (i.e. PostgreSQL, MySQL etc.) and login.
-3. Create or select the database you wish to work in.
-4. Write appropriate SQL commands to execute the required tasks.
-5. Execute the commands.
-6. Verify the output.
-7. Note down the results and take screenshots for record.
+1. Authenticated into the database server and established a stable connection.
+2. Initialized a dedicated database environment for the Library Management System.
+3. Executed CREATE TABLE scripts in a hierarchical order, ensuring parent tables were established before dependent transaction tables.
+4. Used INSERT statements to populate the system with diverse sample records for books and visitors.
+5. Ran complex SELECT queries to verify cross-table consistency and ensure data was stored accurately.
+6. Applied UPDATE and DELETE operations to confirm that the database maintains its rules (constraints) during data changes.
+7. Defined the Librarian role and assigned granular permissions for specific database operations.
+8. Validated the security model by attempting restricted actions before and after revoking permissions.
+9. Compiled the final SQL scripts and captured visual evidence (screenshots) of the successful command executions.
 
 ---
 
