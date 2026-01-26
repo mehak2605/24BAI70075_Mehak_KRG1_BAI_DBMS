@@ -17,26 +17,24 @@ To understand and implement SQL SELECT queries using various clauses such as WHE
 ---
 
 ## Practical/Experiment Steps
-1.  Created table EMPLOYEE to store workforce details including EMP_ID, EMP_NAME, DEPARTMENT, SALARY, and JOINING_DATE
-2.  Established Primary Keys on the EMP_ID column to uniquely identify each employee record within the organization
-3.  Added records in the database using INSERT statements to add records across various departments
-4.  Calculated average salary using the AVG() aggregate function combined with GROUP BY DEPARTMENT to determine the mean salary for each department
-5.  Applied row-level filtering using the HAVING clause to identify specific employees whose individual salaries exceed 20,000
-6.  Implemented group-level filtering by using the HAVING clause to display only those departments where the average salary is greater than 30,000
-7.  Organized query results using the ORDER BY clause in descending order (DESC) to rank departments from the highest to the lowest average salary
-
+* Schema Definition: Constructed the fundamental EMPLOYEE table structure, defining specific data types for employee IDs, names, departments, salaries, and joining dates.
+* Data Population: Seeded the database with sample employee records across various departments (IT, HR, Finance) to create a functional dataset for testing.
+* Aggregate Data Analysis: Implemented GROUP BY operations to calculate the average salary for each department using the AVG() aggregate function.
+* Conditional Filtering: Applied high-level filtering logic using the HAVING clause to isolate specific records, such as employees with salaries exceeding 20,000.
+* Data Sorting & Grouped Constraints: Configured queries to sort department averages in descending order and practiced applying secondary filters to grouped results.
 
 ---
 
 ## Procedure
-1. Start the computer system.
-2.	Open the software (i.e. PostgreSQL, MySQL etc.) and login.
-3.	Create or select the database you wish to work in.
-4.	Write appropriate SQL commands to execute the required tasks.
-5.	Execute the commands.
-6.	Verify the output.
-7.	Note down the results and take screenshots for record
-
+1. Logged into the pgAdmin administration tool and established a connection to the PostgreSQL database server.
+2. Initialized a new database environment to house the employee management system.
+3. Ran the CREATE TABLE command to define the EMPLOYEE schema, ensuring EMP_ID was set as the Primary Key.
+4. Executed multiple INSERT statements to populate the table with diverse sample books and visitor profiles—in this case, employee records.
+5. Used SELECT queries paired with GROUP BY to verify that data was correctly stored and consistent across the table.
+6. Applied HAVING and WHERE clauses to test how the system handles specific data retrieval conditions.
+7. Utilized the ORDER BY clause to arrange the output in descending order based on average salaries.
+8. Tested and verified the effectiveness of security or logic policies by ensuring queries returned expected results or empty sets when conditions weren't met.
+9. Saved the final SQL script and captured screenshots of the execution results for record maintenance.
 
 ---
 
