@@ -57,7 +57,7 @@ END;
 **Output:**
 
 
-![Output of Commands](Exp3_Images/1.png)
+![Output of Commands](Exp3_Images/Exp3_Output.png)
 
 
 ---
