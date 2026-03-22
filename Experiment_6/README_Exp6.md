@@ -1,4 +1,4 @@
-# Experiment 5
+# Experiment 6
 
 ## Aim
 To understand the concept and working of cursors in PL/SQL for row-by-row data processing, and to analyse how implicit cursors, explicit cursors, and cursor attributes are used to implement business logic on multiple rows in a database table.
