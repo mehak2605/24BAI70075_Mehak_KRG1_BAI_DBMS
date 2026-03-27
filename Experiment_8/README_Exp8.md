@@ -6,14 +6,14 @@ To understand the design and implementation of stored procedures in PL/SQL, focu
 ---
 
 ## Objectives
-* To create and execute a parameterized stored procedure that processes data from an employee table, utilizes multiple parameter types to return calculated results and execution status, and demonstrates the invocation of procedures using anonymous blocks.
+* To create and execute a parameterised stored procedure that processes data from an employee table, utilizes multiple parameter types to return calculated results and execution status, and demonstrates the invocation of procedures using anonymous blocks.
 
 ---
 
 ## Practical/Experiment Steps
 * Database Schema Provisioning: Created the employees table with a primary key and defined specific data types for personal and financial attributes.
 * Procedure Encapsulation: Developed a stored procedure get_employee_count_by_gender to encapsulate the logic for counting records based on specific criteria.
-* Parameter Mode Configuration: Implemented a diverse set of parameters including IN for input, OUT for returning the count, and INOUT for tracking and updating the execution status.
+* Parameter Mode Configuration: Implemented a diverse set of parameters, including IN for input, OUT for returning the count, and INOUT for tracking and updating the execution status.
 * Procedural Logic Integration: Used the SELECT INTO clause within the procedure body to map aggregate query results directly to output variables.
 * Anonymous Block Execution: Constructed a DO block to declare local variables, handle the procedure call, and manage the final communication of results to the user.
 
